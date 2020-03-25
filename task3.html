@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timilxr Javascript</title>
+</head>
+<body>
+	<h3 id="name"></h3>
+	<h3 id="courses"></h3>
+	<h3 id="num"></h3>
+	<div id="count"></div>
+	<script>
+	
+	</script>
+</body>
+</html>
+<script type="text/javascript">
+	const nam = "AYORINDE Timilehin Emmanuel";
+	var courses = ["HTML", "CSS", "JavaScript"];
+	var odd = [];
+
+	document.getElementById('name').innerHTML = nam;
+	document.getElementById('courses').innerHTML = courses;
+
+	for (var i = 0; i <= 200; i++) {
+		if(i%2 !== 0){
+			odd.push(i);
+		}
+	};
+		for (var x = 0; x < odd.length; x++) {
+		var head = document.createElement("h4");
+		var content = document.createTextNode(odd[x]);
+		head.appendChild(content);
+		var element = document.getElementById("count");
+		element.appendChild(head);
+		
+	};
+
+	
+</script>
